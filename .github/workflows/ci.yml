@@ -4,12 +4,12 @@ jobs:
    Build:
       run-on: ubuntu-latest
       
-      step:
+      steps:
         - name: Checkout code
-        uses: actions/checkout@v3 
+          uses: actions/checkout@v3 
 
         - name: Run Python Script
-        run: python hello.py
+          run: python hello.py
 
         
       
