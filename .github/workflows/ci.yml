@@ -1,15 +1,16 @@
-name: CI Pipeline 
+name: CI Pipeline
+
 on: push
+
 jobs:
-   Build:
-      run-on: ubuntu-latest
-      
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v3 
+  build:
+    runs-on: ubuntu-latest
 
-        - name: Run Python Script
-          run: python hello.py
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
+      - name: Run Python script
+        run: python hello.py
         
       
